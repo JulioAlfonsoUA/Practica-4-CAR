@@ -135,6 +135,7 @@ template <class T> Image<T> Image<T>::operator*(float scalar) const {
 template <class T> Image<T> Image<T>::operator+(const Image<T>& other) const {
     assert(width == other.width && height == other.height && channels == other.channels);
     Image<T> new_image(width, height, channels);
+    #pragma omp parallel for schedule(static) shared(new_image)
     for(int j=0;j<height;j++)
     {
         for(int i=0;i<width;i++){
