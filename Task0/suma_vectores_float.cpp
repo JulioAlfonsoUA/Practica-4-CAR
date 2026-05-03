@@ -14,8 +14,11 @@ int main(int argc, char *argv[]) {
     #pragma omp parallel shared(a,b,c,chunk) private(i)
     {
         #pragma omp for schedule(static, chunk) nowait
-        for (i = 0; i < N; i++)
+        for (i = 0; i < N; i++){
+            if (omp_get_thread_num() == 3)
+                std::cout<<"Thread "<<omp_get_thread_num()<<" processing index "<<i<<"\n";
             c[i] = a[i] + b[i];
+        }
     }
 
     std::cout << "Suma de vectores completada\n";

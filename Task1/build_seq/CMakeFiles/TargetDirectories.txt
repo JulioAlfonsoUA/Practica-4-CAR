@@ -1,0 +1,8 @@
+/home/julio-alfonso/Escritorio/Segundo año/Computación Alto Rendimiento/sourceP4/repositorio to guapo/Task1/build_seq/CMakeFiles/edit_cache.dir
+/home/julio-alfonso/Escritorio/Segundo año/Computación Alto Rendimiento/sourceP4/repositorio to guapo/Task1/build_seq/CMakeFiles/rebuild_cache.dir
+/home/julio-alfonso/Escritorio/Segundo año/Computación Alto Rendimiento/sourceP4/repositorio to guapo/Task1/build_seq/src/CMakeFiles/detect.dir
+/home/julio-alfonso/Escritorio/Segundo año/Computación Alto Rendimiento/sourceP4/repositorio to guapo/Task1/build_seq/src/CMakeFiles/edit_cache.dir
+/home/julio-alfonso/Escritorio/Segundo año/Computación Alto Rendimiento/sourceP4/repositorio to guapo/Task1/build_seq/src/CMakeFiles/rebuild_cache.dir
+/home/julio-alfonso/Escritorio/Segundo año/Computación Alto Rendimiento/sourceP4/repositorio to guapo/Task1/build_seq/src/utils/CMakeFiles/utils.dir
+/home/julio-alfonso/Escritorio/Segundo año/Computación Alto Rendimiento/sourceP4/repositorio to guapo/Task1/build_seq/src/utils/CMakeFiles/edit_cache.dir
+/home/julio-alfonso/Escritorio/Segundo año/Computación Alto Rendimiento/sourceP4/repositorio to guapo/Task1/build_seq/src/utils/CMakeFiles/rebuild_cache.dir
