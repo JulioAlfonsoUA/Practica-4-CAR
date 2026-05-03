@@ -181,7 +181,7 @@ template <class T> Image<T> Image<T>::convolution(const Image<float> &kernel) co
     int kernel_size = kernel.width;
     Image<T> convolved(width, height, channels);
 
-    #pragma omp parallel for schedule(dynamic) shared(convolved, kernel) firstprivate(kernel_size) 
+    #pragma omp parallel for schedule(static) shared(convolved, kernel) firstprivate(kernel_size) 
     for(int j=0;j<height;j++){
         for(int i=0;i<width; i++){
             for(int c=0;c<channels;c++){

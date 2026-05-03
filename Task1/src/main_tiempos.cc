@@ -13,7 +13,7 @@
 
 // Mini funciones definidas para que el código no sea un puñado de líneas idénticas.
 #define TIMER_START std::chrono::steady_clock::time_point _t0 = std::chrono::steady_clock::now();
-#define TIMER_MS(label) std::cout<<"["<< (label)<<"]"<< std::chrono::duration_cast<std::chrono::microseconds>( \
+#define TIMER_MS(label) std::cout<<"["<< (label)<<"] "<< std::chrono::duration_cast<std::chrono::microseconds>( \
     std::chrono::steady_clock::now()-_t0).count()<<" us\n"; _t0 = std::chrono::steady_clock::now();
 
 Image<float> get_srm_3x3() {
@@ -141,7 +141,7 @@ Image<unsigned char> compute_ela(const Image<unsigned char> &image, int quality)
     return result;
 }
 
-// ─────────────────────────────────────────────────────────────────────────────
+
 int main(int argc, char **argv) {
     if(argc == 1) {
         std::cerr << "Uso: ./detect <imagen>\n";
@@ -153,7 +153,7 @@ int main(int argc, char **argv) {
     TIMER_START
     Image<unsigned char> image = load_from_file(argv[1]);
     TIMER_MS("load_from_file")
-    std::cout<<"Dimensiones: "<<image.width<<"x"<<image.height<<"canales: "<<image.channels<<"\n";
+    std::cout<<"Dimensiones: "<<image.width<<"x"<<image.height<<"\ncanales: "<<image.channels<<"\n";
     std::cout<<"Num bloques DCT ("<<block_size<<"x"<<block_size<<"): "<< (image.width/block_size) * (image.height/block_size)<<"\n";
     save_to_file("srm_kernel_3x3.png", compute_srm(image, 3));
     save_to_file("srm_kernel_5x5.png", compute_srm(image, 5));
