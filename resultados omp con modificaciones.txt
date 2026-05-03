@@ -1,0 +1,94 @@
+OMP_NUM_THREADS=1 ./build_par/detect face_
+swap_enhanced.png 
+Computing SRM 3x3...
+Computing inverse DCT 8x8...
+Computing SRM 5x5...
+Computing ELA...
+Computing direct DCT 8x8...
+ELA elapsed: 15.3346 ms
+SRM elapsed time: 24.4341ms
+SRM elapsed time: 56.9355ms
+DCT elapsed time: 315.049ms
+DCT elapsed time: 612.187ms
+
+Total elapsed (parallel): 630.886 ms
+OpenMP threads available: 1
+
+
+
+
+
+OMP_NUM_THREADS=2 ./build_par/detect face_
+swap_enhanced.png 
+Computing SRM 5x5...
+Computing SRM 3x3...
+Computing ELA...
+Computing direct DCT 8x8...
+Computing inverse DCT 8x8...
+SRM elapsed time: 15.2398ms
+ELA elapsed: 15.5648 ms
+SRM elapsed time: 24.0523ms
+DCT elapsed time: 191.114ms
+DCT elapsed time: 340.026ms
+
+Total elapsed (parallel): 357.803 ms
+OpenMP threads available: 2
+
+
+
+
+
+OMP_NUM_THREADS=4 ./build_par/detect face_
+swap_enhanced.png 
+Computing SRM 3x3...
+Computing inverse DCT 8x8...
+Computing SRM 5x5...
+Computing ELA...
+Computing direct DCT 8x8...
+SRM elapsed time: 16.2882ms
+ELA elapsed: 23.3585 ms
+SRM elapsed time: 23.4892ms
+DCT elapsed time: 158.962ms
+DCT elapsed time: 224.71ms
+
+Total elapsed (parallel): 243.601 ms
+OpenMP threads available: 4
+
+
+
+
+
+OMP_NUM_THREADS=8 ./build_par/detect face_
+swap_enhanced.png 
+Computing SRM 3x3...
+Computing SRM 5x5...
+Computing inverse DCT 8x8...
+Computing ELA...
+Computing direct DCT 8x8...
+SRM elapsed time: 18.8442ms
+ELA elapsed: 24.1329 ms
+SRM elapsed time: 25.2791ms
+DCT elapsed time: 97.0979ms
+DCT elapsed time: 172.914ms
+
+Total elapsed (parallel): 190.972 ms
+OpenMP threads available: 8
+
+
+
+
+
+./build_par/detect face_swap_enhanced.png 
+Computing SRM 3x3...
+Computing inverse DCT 8x8...
+Computing direct DCT 8x8...
+Computing SRM 5x5...
+Computing ELA...
+ELA elapsed: 23.1091 ms
+SRM elapsed time: 50.0288ms
+SRM elapsed time: 54.6409ms
+DCT elapsed time: 111.887ms
+DCT elapsed time: 149.62ms
+
+Total elapsed (parallel): 172.163 ms
+OpenMP threads available: 16

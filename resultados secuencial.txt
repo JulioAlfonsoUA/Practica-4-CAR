@@ -1,0 +1,49 @@
+Cargando imagen...
+[load_from_file]13546 us
+Dimensiones: 680x680canales: 4
+Num bloques DCT (8x8): 7225
+
+Computing SRM 3x3...
+[to_grayscale + convert<float>]2992 us
+[convolution]16458 us
+[abs]1449 us
+[normalized]2372 us
+[srm * 255]905 us
+[convert<unsigned char>]1181 us
+SRM elapsed time: 25391us
+
+Computing SRM 5x5...
+[to_grayscale + convert<float>]1837 us
+[convolution]37221 us
+[abs]823 us
+[normalized]1808 us
+[srm * 255]860 us
+[convert<unsigned char>]1151 us
+SRM elapsed time: 43774us
+
+Computing ELA...
+[to_grayscale]1611 us
+[save_to_file (I/O escritura)]1658 us
+[load_from_file (I/O lectura)]2633 us
+[resta (+ convert<float>)]5357 us
+[abs]1122 us
+[normalized * 255]3834 us
+[convert<uchar>]1146 us
+ELA elapsed time: 17444us
+
+Computing inverse DCT 8x8...
+[convert<float> + to_grayscale]5253 us
+[get_blocks]54 us
+[bucle DCT]599566 us
+[convert<unsigned char>]689 us
+DCT elapsed time: 605597us
+
+Computing direct DCT 8x8...
+[convert<float> + to_grayscale]5014 us
+[get_blocks]56 us
+[bucle DCT]303021 us
+[convert<unsigned char>]590 us
+DCT elapsed time: 308720us
+--------------------------------------------------------------
+TIEMPO TOTAL SECUENCIAL: 1136556 us
+--------------------------------------------------------------
